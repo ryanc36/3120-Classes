@@ -1,7 +1,8 @@
 class Animal:
-    def __init__(self, name, walk):
+    def __init__(self, name, walk, eat):
         self.__name = name 
         self.__walk = walk
+        self.__eat = eat
         print("hello, I am", self.__name)
 
     def talk(self):
@@ -10,6 +11,6 @@ class Animal:
     def walk(self):
         print(self.__name, "is walking", self.__walk)
 
-    #def eat(self):
-        #print(f"{self.__name} is eating.")
+    def eat(self):
+        print(self.__name, "is eating", self.__eat)
 
